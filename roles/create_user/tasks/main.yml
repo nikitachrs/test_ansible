@@ -1,0 +1,6 @@
+---
+  - name: Create user_list
+    user:
+      name: "{{ item }}"
+      state: present
+    with_items:  "{{ user_list }}"
